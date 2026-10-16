@@ -196,6 +196,16 @@ go-to: rm_main
 
 Siemsen has been removed as an advisor. The Leftist faction disapproves.
 
+@remove_ledebour
+title: Remove Ledebour
+view-if: ledebour_advisor = 1
+tags: remove_advisor
+on-arrival: ledebour_advisor = 0; left_dissent += 5; n_advisors -= 1
+go-to: rm_main
+
+Ledebour has been removed as an advisor. The Leftist faction disapproves.
+
+
 
 
 
@@ -492,6 +502,17 @@ tags: left_advisor
 
 Anna Siemsen is now an advisor.
 
+@add_ledebour
+title: Georg Ledebour
+subtitle: Paul Levi is a former KPD leader who was purged for criticizing Communist policies. {!<br><br>!}Actions - Building the Left, Cooperation with the KPD
+is-card: true
+card-image: img/portraits/LedebourGeorg.jpg
+view-if: ledebour_advisor = 0 and n_advisors < 3 and left_split = 0
+on-arrival: ledebour_advisor = 1; n_advisors += 1; left_strength += 5
+go-to: advisor_menu
+tags: left_advisor
+
+Georg Ledebour is now an advisor.
 
 
 # labor
