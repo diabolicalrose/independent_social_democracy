@@ -292,6 +292,16 @@ go-to: rm_main
 Zeitz has been removed as an advisor. 
 
 
+@remove_crispien
+title: Remove Crispien
+view-if: crispien_advisor = 1
+tags: remove_advisor
+on-arrival: crispien_advisor = 0; n_advisors -= 1
+go-to: rm_main
+
+Crispien has been removed as an advisor. 
+
+
 
 
 
@@ -679,5 +689,17 @@ go-to: advisor_menu
 tags: nonfactional_advisor
 
 Luise Zeitz is now an advisor.
+
+@add_crispien
+title: Arthur Crispien
+subtitle: Arthur Crispien is an editor, internationalist, and organizer with relations across factional lines. {!<br><br>!}Actions - Judicial Affairs, Constitutional Reform
+is-card: true
+card-image: img/portraits/CrispienArthur.jpg
+view-if: crispien_advisor = 0 and n_advisors < 3
+on-arrival: crispien_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+tags: nonfactional_advisor
+
+Arthur Crispien is now an advisor.
 
 
