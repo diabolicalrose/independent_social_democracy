@@ -282,14 +282,14 @@ go-to: rm_main
 
 Radbruch has been removed as an advisor. 
 
-@remove_zeitz
-title: Remove Zeitz
-view-if: zeitz_advisor = 1
+@remove_zietz
+title: Remove Zietz
+view-if: zietz_advisor = 1
 tags: remove_advisor
-on-arrival: zeitz_advisor = 0; n_advisors -= 1
+on-arrival: zietz_advisor = 0; n_advisors -= 1
 go-to: rm_main
 
-Zeitz has been removed as an advisor. 
+Zietz has been removed as an advisor. 
 
 
 @remove_crispien
@@ -678,17 +678,17 @@ tags: nonfactional_advisor
 
 Friedrich Stampfer is now an advisor.
 
-@add_zeitz
-title: Luise Zeitz
-subtitle: Luise Zeitz is a prominent organizer and agitator with an interest in social policy and women's affairs who was a long-time secretary in the SPD before taking up the same role among the Independents. {!<br><br>!}Actions - Media, Editorial Line, Cooperation with the KPD
+@add_Zietz
+title: Luise Zietz
+subtitle: Luise Zietz is a prominent organizer and agitator with an interest in social policy and women's affairs who was a long-time secretary in the SPD before taking up the same role among the Independents. {!<br><br>!}Actions - Media, Editorial Line, Cooperation with the KPD
 is-card: true
-card-image: img/portraits/ZeitzLuise.jpg
-view-if: zeitz_advisor = 0 and n_advisors < 3
-on-arrival: zeitz_advisor = 1; n_advisors += 1
+card-image: img/portraits/ZietzLuise.jpg
+view-if: zietz_advisor = 0 and n_advisors < 3
+on-arrival: zietz_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: nonfactional_advisor
 
-Luise Zeitz is now an advisor.
+Luise Zietz is now an advisor.
 
 @add_crispien
 title: Arthur Crispien
