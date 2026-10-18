@@ -2,7 +2,7 @@ title: Luise Zeitz
 is-pinned-card: true
 tags: advisor 
 card-image: img/portraits/ZeitzLuise.jpg
-view-if: Zeitz_advisor = 1
+view-if: zeitz_advisor = 1
 new-page: true 
 
 #Described by Morgan as someone who "preached revolution" but "tended to vote with the moderates." May be moved to the centrists 
