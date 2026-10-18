@@ -70,6 +70,15 @@ go-to: rm_main
 
 Breitscheid has been removed as an advisor. The Centrist faction disapproves.
 
+@remove_hasse
+title: Remove Hasse
+view-if: hasse_advisor = 1
+tags: remove_advisor
+on-arrival: hasse_advisor = 0; center_dissent += 5; n_advisors -= 1
+go-to: rm_main
+
+Hasse has been removed as an advisor. The Centrist faction disapproves.
+
 # reformists
 
 
@@ -405,6 +414,18 @@ go-to: advisor_menu
 tags: center_advisor
 
 Rudolf Breitscheid is now an advisor.
+
+@add_hasse
+title: Hugo Hasse
+subtitle: Hugo Hasse is a practicing lawyer who is the most prominent leader of the Independents. {!<br><br>!}Actions - International Relations, Foreign Policy, Party Discipline
+is-card: true
+card-image: img/portraits/HasseHugo.jpg
+view-if: hasse_advisor = 0 and n_advisors < 3
+on-arrival: hasse_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+tags: center_advisor
+
+Hugo Hasse is now an advisor.
 
 # reformist
 
