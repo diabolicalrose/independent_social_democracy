@@ -1,15 +1,15 @@
-title: Hugo Hasse
+title: Hugo Haase
 is-pinned-card: true
 tags: advisor, centrist
-card-image: img/portraits/HasseHugo.jpg
-view-if: hasse_advisor = 1
+card-image: img/portraits/HaaseHugo.jpg
+view-if: haase_advisor = 1
 new-page: true 
 
 #assasinated 7 November 1919
 
-= Hugo Hasse
+= Hugo Haase
 
-Hugo Hasse is a practicing lawyer who is the most prominent leader of the Independents, having served previously as co-chair of the SPD.
+Hugo Haase is a practicing lawyer who is the most prominent leader of the Independents, having served previously as co-chair of the SPD.
 
 - @building_the_left
 - @kpd_cooperation
